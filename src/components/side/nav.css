@@ -1,24 +1,102 @@
 nav {
-  width: 180px;
+  width: 120px;
   height: 100vh;
-  position: fixed;
+  padding: 25px 10px;
   top: 0;
   left: 0;
-  padding: 25px 10px;
   display: flex;
+  position: fixed;
   align-items: center;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
+}
+nav .logo {
+  height: calc(100% / 6);
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 nav .logo h1 {
+  font-size: 32px;
   color: #f9f9f9;
-  font-size: 30px;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
 }
 nav .logo h1 span {
   color: #5918df;
 }
-nav .toggle{
-    width: 100%;
-    height: 70px;
+nav .toggle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100% / 3);
+  gap: 30px;
+  justify-content: center;
+}
+nav .toggle span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #656877;
+  cursor: pointer;
+  position: relative;
+  transform: rotate(45deg);
+}
+nav .toggle span::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  position: absolute;
+}
+nav .toggle span.active {
+  border-color: #5918df;
+  box-shadow: 0px 0px 2px rgb(89, 24, 233), 0px 0px 4px rgb(89, 24, 233),
+    0px 0px 6px rgb(89, 24, 233);
+  transition: .2s ease-in-out;
+}
+nav .toggle span.active::after {
+  background-color: #5918df;
+  transition: .2s ease-in-out;
+}
+nav .toggle span:hover {
+  border-color: #5918df;
+  box-shadow: 0px 0px 2px rgb(89, 24, 233), 0px 0px 4px rgb(89, 24, 233),
+    0px 0px 6px rgb(89, 24, 233);
+  transition: .2s ease-in-out;
+}
+nav .toggle span:hover:after {
+  background-color: #5918df;
+}
+.copy {
+  width: 100%;
+  height: 246px;
+  position: relative;
+  display: flex;
+}
+.copy .tw {
+  height: 100px;
+  width: 246px;
+  position: absolute;
+  top: 73px;
+  left: -73px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg);
+}
+.copy p {
+  width: 246px;
+  display: flex;
+  font-size: 22px;
+  gap: 10px;
+}
+.copy p a {
+  color: #f9f9f9;
+}
+.copy p span {
+  color: #656877;
 }

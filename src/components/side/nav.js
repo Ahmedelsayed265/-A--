@@ -5,11 +5,25 @@ const Nav = () => {
     <nav>
       <div className="logo">
         <h1>
-          <span>{`<`}</span> Ahmed <span>{`/>`}</span>
+          <span>{`<`}</span> A <span>{`/>`}</span>
         </h1>
       </div>
       <div className="toggle">
-      <i className="fas fa-bars"></i>
+        <span className="cir_tog active" />
+        <span className="cir_tog" />
+        <span className="cir_tog" />
+        <span className="cir_tog" />
+        <span className="cir_tog" />
+      </div>
+      <div className="copy">
+        <div className="tw">
+          <p>
+            <span>© 2022</span>{" "}
+            <a href="https://www.linkedin.com/in/ahmed-elsayed-0ba86020b/">
+              AhmedElsayed
+            </a>
+          </p>
+        </div>
       </div>
     </nav>
   );
