@@ -1,0 +1,6 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./../assest/main.jpg);
+  background-size: 100% 100%;
+}
