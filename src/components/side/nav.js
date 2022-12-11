@@ -18,7 +18,7 @@ const Nav = () => {
       <div className="copy">
         <div className="tw">
           <p>
-            <span>© 2022</span>{" "}
+            <span>© 2022</span>
             <a href="https://www.linkedin.com/in/ahmed-elsayed-0ba86020b/">
               AhmedElsayed
             </a>

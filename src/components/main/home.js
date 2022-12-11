@@ -1,8 +1,8 @@
 import React from "react";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
-import Star from "./../assest/star.png";
 import "./home.css";
+import Star from "./../assest/star.png";
 const Home = () => {
   const el = useRef(null);
   useEffect(() => {
@@ -33,16 +33,19 @@ const Home = () => {
           Hi, I am <span ref={el} />
         </h2>
         <p className="h_p">
-          I am a frontend web developer. I can provide clean code and pixel
-          perfect design. I also make website more & more interactive with web
-          animations.
+          Creative Front End Developer skilled at creating a unique customer
+          experience that highlights brand messaging. Drives customer experience
+          improving click rates and conversion rates.Able to facilitate
+          translation of customer vision into a functional web experience that
+          engages customers and improves the bottom line.
         </p>
         <div className="social">
           <div className="icon">
             <span>
               <i className="fa-brands fa-facebook-f" />
             </span>
-            <a className="span"
+            <a
+              className="span"
               href="https://www.facebook.com/profile.php?id=100012773227138"
               target="_blank"
               rel="noopener noreferrer"
@@ -54,7 +57,8 @@ const Home = () => {
             <span>
               <i className="fa-brands fa-instagram" />
             </span>
-            <a className="span"
+            <a
+              className="span"
               href="https://www.instagram.com/ahmedelsayed_122/"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,38 +68,41 @@ const Home = () => {
           </div>
           <div className="icon">
             <span>
-            <i className="fa-brands fa-linkedin-in" />
+              <i className="fa-brands fa-linkedin-in" />
             </span>
-            <a className="span"
+            <a
+              className="span"
               href="https://www.linkedin.com/in/ahmed-elsayed-0ba86020b/"
               target="_blank"
               rel="noopener noreferrer"
             >
-            <i className="fa-brands fa-linkedin-in" />
+              <i className="fa-brands fa-linkedin-in" />
             </a>
           </div>
           <div className="icon">
             <span>
-            <i className="fa-brands fa-github" />
+              <i className="fa-brands fa-github" />
             </span>
-            <a className="span"
+            <a
+              className="span"
               href="https://github.com/Ahmedelsayed265"
               target="_blank"
               rel="noopener noreferrer"
             >
-            <i className="fa-brands fa-github" />
+              <i className="fa-brands fa-github" />
             </a>
           </div>
           <div className="icon">
             <span>
-            <i className="fa-brands fa-behance" />
+              <i className="fa-brands fa-behance" />
             </span>
-            <a className="span"
+            <a
+              className="span"
               href="https://www.behance.net/ahmedelsayed166"
               target="_blank"
               rel="noopener noreferrer"
             >
-            <i className="fa-brands fa-behance" />
+              <i className="fa-brands fa-behance" />
             </a>
           </div>
         </div>

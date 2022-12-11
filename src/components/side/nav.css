@@ -29,8 +29,8 @@ nav .toggle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: calc(100% / 3);
-  gap: 30px;
+  height: calc(100% / 1.9);
+  gap: 40px;
   justify-content: center;
 }
 nav .toggle span {
@@ -73,16 +73,16 @@ nav .toggle span:hover:after {
 }
 .copy {
   width: 100%;
-  height: 246px;
+  height: 200px;
   position: relative;
   display: flex;
 }
 .copy .tw {
   height: 100px;
-  width: 246px;
+  width: 200px;
   position: absolute;
-  top: 73px;
-  left: -73px;
+  top: 50px;
+  left: -50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,7 +91,7 @@ nav .toggle span:hover:after {
 .copy p {
   width: 246px;
   display: flex;
-  font-size: 22px;
+  font-size: 18px;
   gap: 10px;
 }
 .copy p a {
