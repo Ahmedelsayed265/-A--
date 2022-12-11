@@ -2,12 +2,14 @@ nav {
   width: 120px;
   height: 100vh;
   padding: 25px 10px;
+  background-color: #100e17;
   top: 0;
   left: 0;
   display: flex;
   position: fixed;
   align-items: center;
   flex-direction: column;
+  border-right: 1px solid rgba(225, 225, 225, 0.04);
   justify-content: space-between;
 }
 nav .logo {
@@ -70,6 +72,36 @@ nav .toggle span:hover {
 }
 nav .toggle span:hover:after {
   background-color: #5918df;
+}
+nav .toggle .cir_tog:hover small {
+  opacity: 1;
+}
+nav .toggle .cir_tog small {
+  transition: .3s ease-in-out;
+  position: absolute;
+  left: 20px;
+  top: -48px;
+  padding: 6px 10px;
+  color: #f9f9f9;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transform: rotate(-45deg);
+  background: rgba(225, 225, 225, 0.04);
+  backdrop-filter: blur(7px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  opacity: 0;
+}
+nav .toggle .cir_tog small::before {
+  width: 10px;
+  height: 14px;
+  content: "";
+  position: absolute;
+  left: -10px;
+  bottom: 28%;
+  clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  background: rgba(225, 225, 225, 0.04);
+  backdrop-filter: blur(7px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .copy {
   width: 100%;

@@ -9,11 +9,21 @@ const Nav = () => {
         </h1>
       </div>
       <div className="toggle">
-        <span className="cir_tog active" />
-        <span className="cir_tog" />
-        <span className="cir_tog" />
-        <span className="cir_tog" />
-        <span className="cir_tog" />
+        <span className="cir_tog active">
+          <small>Home</small>
+        </span>
+        <span className="cir_tog">
+          <small>About</small>
+        </span>
+        <span className="cir_tog">
+          <small>Resume</small>
+        </span>
+        <span className="cir_tog">
+          <small>Works</small>
+        </span>
+        <span className="cir_tog">
+          <small>Contact</small>
+        </span>
       </div>
       <div className="copy">
         <div className="tw">
