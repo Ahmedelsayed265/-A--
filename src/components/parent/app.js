@@ -7,9 +7,11 @@ const App = () => {
   return (
     <div className="app">
       <Nav />
-      <Routes >
-        <Route path="/" exact element={<Home />} />
-      </Routes>
+      <div className="entire">
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+        </Routes>
+      </div>
     </div>
   );
 };

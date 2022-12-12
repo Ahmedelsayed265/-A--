@@ -1,29 +1,29 @@
 import React from "react";
 import "./nav.css";
+import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <nav>
       <div className="logo">
         <h1>
-          <span>{`<`}</span> A <span>{`/>`}</span>
+          <Link to="/">
+            <span>{`<`}</span> A <span>{`/>`}</span>
+          </Link>
         </h1>
       </div>
       <div className="toggle">
-        <span className="cir_tog active">
+        <Link to="/" className="cir_tog active">
           <small>Home</small>
-        </span>
-        <span className="cir_tog">
+        </Link>
+        <Link to="/about" className="cir_tog">
           <small>About</small>
-        </span>
-        <span className="cir_tog">
-          <small>Resume</small>
-        </span>
-        <span className="cir_tog">
+        </Link>
+        <Link to="/works" className="cir_tog">
           <small>Works</small>
-        </span>
-        <span className="cir_tog">
+        </Link>
+        <Link to="/contact" className="cir_tog">
           <small>Contact</small>
-        </span>
+        </Link>
       </div>
       <div className="copy">
         <div className="tw">

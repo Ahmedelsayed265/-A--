@@ -25,7 +25,7 @@ const Home = () => {
   }, []);
   return (
     <main className="home">
-      <div className="entire">
+      <div className="h_entire">
         <div className="img">
           <img src={Star} alt="star" />
         </div>

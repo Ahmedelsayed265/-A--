@@ -20,11 +20,13 @@ nav .logo {
 }
 nav .logo h1 {
   font-size: 32px;
-  color: #f9f9f9;
   letter-spacing: 0.5px;
 }
+nav .logo h1 a {
+  color: #f9f9f9;
+}
 nav .logo h1 span {
-  color: #5918df;
+  color: #0021f3;
 }
 nav .toggle {
   width: 100%;
@@ -35,7 +37,7 @@ nav .toggle {
   gap: 40px;
   justify-content: center;
 }
-nav .toggle span {
+nav .toggle .cir_tog {
   display: block;
   width: 16px;
   height: 16px;
@@ -44,7 +46,7 @@ nav .toggle span {
   position: relative;
   transform: rotate(45deg);
 }
-nav .toggle span::after {
+nav .toggle .cir_tog::after {
   content: '';
   width: 5px;
   height: 5px;
@@ -54,24 +56,24 @@ nav .toggle span::after {
   background-color: transparent;
   position: absolute;
 }
-nav .toggle span.active {
-  border-color: #5918df;
-  box-shadow: 0px 0px 2px rgb(89, 24, 233), 0px 0px 4px rgb(89, 24, 233),
-    0px 0px 6px rgb(89, 24, 233);
+nav .toggle .cir_tog.active {
+  border-color: #0021f3;
+  box-shadow: 0px 0px 2px rgb(0,33,243), 0px 0px 4px rgb(0,33,243),
+    0px 0px 6px rgb(0,33,243);
   transition: .2s ease-in-out;
 }
-nav .toggle span.active::after {
-  background-color: #5918df;
+nav .toggle .cir_tog.active::after {
+  background-color: #0021f3;
   transition: .2s ease-in-out;
 }
-nav .toggle span:hover {
-  border-color: #5918df;
-  box-shadow: 0px 0px 2px rgb(89, 24, 233), 0px 0px 4px rgb(89, 24, 233),
-    0px 0px 6px rgb(89, 24, 233);
+nav .toggle .cir_tog:hover {
+  border-color: #0021f3;
+  box-shadow: 0px 0px 2px rgb(0,33,243), 0px 0px 4px rgb(0,33,243),
+    0px 0px 6px rgb(0,33,243);
   transition: .2s ease-in-out;
 }
-nav .toggle span:hover:after {
-  background-color: #5918df;
+nav .toggle .cir_tog:hover:after {
+  background-color: #0021f3;
 }
 nav .toggle .cir_tog:hover small {
   opacity: 1;
