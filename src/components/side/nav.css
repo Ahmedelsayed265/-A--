@@ -1,8 +1,8 @@
 nav {
-  width: 120px;
+  width: 100px;
   height: 100vh;
   padding: 25px 10px;
-  background-color: #100e17;
+  background-color: #111517;
   top: 0;
   left: 0;
   display: flex;
@@ -19,14 +19,13 @@ nav .logo {
   width: 100%;
 }
 nav .logo h1 {
-  font-size: 32px;
-  letter-spacing: 0.5px;
+  font-size: 26px;
 }
 nav .logo h1 a {
   color: #f9f9f9;
 }
 nav .logo h1 span {
-  color: #0021f3;
+  color: #d00120;
 }
 nav .toggle {
   width: 100%;
@@ -34,7 +33,7 @@ nav .toggle {
   flex-direction: column;
   align-items: center;
   height: calc(100% / 1.9);
-  gap: 40px;
+  gap: 45px;
   justify-content: center;
 }
 nav .toggle .cir_tog {
@@ -57,23 +56,23 @@ nav .toggle .cir_tog::after {
   position: absolute;
 }
 nav .toggle .cir_tog.active {
-  border-color: #0021f3;
-  box-shadow: 0px 0px 2px rgb(0,33,243), 0px 0px 4px rgb(0,33,243),
-    0px 0px 6px rgb(0,33,243);
+  border-color: #d00120;
+  box-shadow: 0px 0px 2px rgb(208, 1, 32), 0px 0px 4px rgb(208, 1, 32),
+    0px 0px 6px rgb(208, 1, 32);
   transition: .2s ease-in-out;
 }
 nav .toggle .cir_tog.active::after {
-  background-color: #0021f3;
+  background-color: #d00120;
   transition: .2s ease-in-out;
 }
 nav .toggle .cir_tog:hover {
-  border-color: #0021f3;
-  box-shadow: 0px 0px 2px rgb(0,33,243), 0px 0px 4px rgb(0,33,243),
-    0px 0px 6px rgb(0,33,243);
+  border-color: #d00120;
+  box-shadow: 0px 0px 2px rgb(208, 1, 32), 0px 0px 4px rgb(208, 1, 32),
+    0px 0px 6px rgb(208, 1, 32);
   transition: .2s ease-in-out;
 }
 nav .toggle .cir_tog:hover:after {
-  background-color: #0021f3;
+  background-color: #d00120;
 }
 nav .toggle .cir_tog:hover small {
   opacity: 1;
@@ -83,8 +82,10 @@ nav .toggle .cir_tog small {
   position: absolute;
   left: 20px;
   top: -48px;
-  padding: 6px 10px;
-  color: #f9f9f9;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 7px 10px;
+  color: #fff;
   letter-spacing: 1px;
   border-radius: 4px;
   transform: rotate(-45deg);
@@ -112,11 +113,11 @@ nav .toggle .cir_tog small::before {
   display: flex;
 }
 .copy .tw {
-  height: 100px;
-  width: 200px;
+  height: 79px;
+  width: 197px;
   position: absolute;
-  top: 50px;
-  left: -50px;
+  top: 59px;
+  left: -59px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,11 +126,13 @@ nav .toggle .cir_tog small::before {
 .copy p {
   width: 246px;
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
   gap: 10px;
 }
 .copy p a {
   color: #f9f9f9;
+  letter-spacing: .5px;
+  font-weight: 300;
 }
 .copy p span {
   color: #656877;

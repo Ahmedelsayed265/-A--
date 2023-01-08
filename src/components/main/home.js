@@ -27,7 +27,7 @@ const Home = () => {
     <main className="home">
       <div className="h_entire">
         <div className="img">
-          <img src={Star} alt="star" />
+          <img loading="lazy" src={Star} alt="star" />
         </div>
         <h2>
           Hi, I am <span ref={el} />

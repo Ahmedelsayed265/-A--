@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -6,10 +6,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
-  font-family: 'Saira Semi Condensed', sans-serif;
+  font-family: 'Radio Canada', sans-serif;
 }
 body {
-  background-color: #100e17;
+  background-color: #111517;
   overflow-x: hidden;
 }
 a {
@@ -20,11 +20,21 @@ ul {
   margin: 0;
   padding: 0;
 }
-.app{
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: #111517;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d00120;
+  height: 300px;
+}
+.app {
   width: 100%;
   height: 100%;
 }
-.entire{
-  width: calc(100% - 120px);
-  margin-left: 120px;
+.entire {
+  width: calc(100% - 100px);
+  margin-left: 100px;
 }
