@@ -30,7 +30,7 @@ const Home = () => {
           <img loading="lazy" src={Star} alt="star" />
         </div>
         <h2>
-          Hi, I am <span ref={el} />
+          <i>Hi, I am </i><span ref={el} />
         </h2>
         <p className="h_p">
           Creative Front End Developer skilled at creating a unique customer
@@ -98,7 +98,7 @@ const Home = () => {
             </span>
             <a
               className="span"
-              href="https://www.behance.net/ahmedelsayed166"
+              href="https://www.behance.net/ahmedelsayed282"
               target="_blank"
               rel="noopener noreferrer"
             >

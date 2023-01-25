@@ -38,9 +38,14 @@
   color: #f9f9f9;
   line-height: 2.5;
   font-size: 44px;
+  width: 100%;
+  padding-left: 200px;
 }
 .home .h_entire h2 span {
   color: #d00120;
+}
+.home .h_entire h2 i {
+  font-style: normal;
 }
 .home .h_entire .social {
   display: flex;

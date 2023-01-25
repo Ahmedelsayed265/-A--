@@ -68,27 +68,63 @@ const About = () => {
                 <div className="tit">
                   <h4 className="title">Trendy Design</h4>
                   <div className="open">
-                    <span />
-                    <span />
+                    <i className="fa-solid fa-chevron-down" />
                   </div>
+                </div>
+                <div className="acc_content active">
+                  <p>
+                    A modern, minimalistic and fully responsive design created
+                    in accordance with the latest web design trends for your
+                    worthy online web presence.
+                  </p>
+                  <ul>
+                    <li>Pixel Perfect</li>
+                    <li>Clean, Simple and Minimalist</li>
+                    <li>Fully Responsive </li>
+                    <li>Converting FIGMA or XD to Website</li>
+                  </ul>
                 </div>
               </div>
               <div className="ac_title">
                 <div className="tit">
                   <h4 className="title">Clean Code</h4>
                   <div className="open">
-                    <span />
-                    <span />
+                    <i className="fa-solid fa-chevron-down" />
                   </div>
+                </div>
+                <div className="acc_content">
+                  <ul>
+                  <li>Built With HTML5 CSS3 - SCSS JavaScript - React.js</li>
+                  <li>Easy to understand and customizable code (Readable code).</li>
+                  <li>Neatly written, well-organized, valid and well-commented code</li>
+                  <li>Best coding practices to achieve higher search engine rankings and faster page loading.</li>
+                  </ul>
                 </div>
               </div>
               <div className="ac_title">
                 <div className="tit">
                   <h4 className="title">Smooth Animations</h4>
                   <div className="open">
-                    <span />
-                    <span />
+                    <i className="fa-solid fa-chevron-down" />
                   </div>
+                </div>
+                <div className="acc_content">
+                  <p>
+                    The template includes cool effects and various options for
+                    smooth and unique animations built on pure CSS3 or famous
+                    libraries.
+                  </p>
+                  <ul>
+                    <li>Parallax</li>
+                    <li>Midnight Header</li>
+                    <li>Slider Animations</li>
+                    <li>Page Transitions</li>
+                    <li>Preloader</li>
+                    <li>Navigation Animations</li>
+                    <li>Scroll Animations</li>
+                    <li>Progress Bars</li>
+                    <li>Hover Animations</li>
+                  </ul>
                 </div>
               </div>
             </div>
