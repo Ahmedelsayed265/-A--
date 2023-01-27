@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./about.css";
 import abo from "./../assest/about.jpg";
 import cv from "./../assest/Ahmed_elsayed.pdf";
 const About = () => {
+  const [activeAccordion, setActiveAccordion] = useState("acc1");
+  const handleClick = e => {
+    setActiveAccordion(e.target.id);
+  };
   return (
     <main className="about">
       <h2 className="hidden">ABOUT</h2>
@@ -65,13 +69,22 @@ const About = () => {
           <div className="accordion">
             <div className="inner">
               <div className="ac_title">
-                <div className="tit">
+                <div id="acc1" onClick={handleClick} className="tit">
                   <h4 className="title">Trendy Design</h4>
                   <div className="open">
-                    <i className="fa-solid fa-chevron-down" />
+                    <i
+                      className={`fa-solid fa-chevron-down ${activeAccordion ===
+                      "acc1"
+                        ? "active"
+                        : ""}`}
+                    />
                   </div>
                 </div>
-                <div className="acc_content active">
+                <div
+                  className={`acc_content cc1 ${activeAccordion === "acc1"
+                    ? "active"
+                    : ""}`}
+                >
                   <p>
                     A modern, minimalistic and fully responsive design created
                     in accordance with the latest web design trends for your
@@ -86,29 +99,55 @@ const About = () => {
                 </div>
               </div>
               <div className="ac_title">
-                <div className="tit">
+                <div id="acc2" onClick={handleClick} className="tit">
                   <h4 className="title">Clean Code</h4>
                   <div className="open">
-                    <i className="fa-solid fa-chevron-down" />
+                    <i
+                      className={`fa-solid fa-chevron-down ${activeAccordion ===
+                      "acc2"
+                        ? "active"
+                        : ""}`}
+                    />
                   </div>
                 </div>
-                <div className="acc_content">
+                <div
+                  className={`acc_content cc2 ${activeAccordion === "acc2"
+                    ? "active"
+                    : ""}`}
+                >
                   <ul>
-                  <li>Built With HTML5 CSS3 - SCSS JavaScript - React.js</li>
-                  <li>Easy to understand and customizable code (Readable code).</li>
-                  <li>Neatly written, well-organized, valid and well-commented code</li>
-                  <li>Best coding practices to achieve higher search engine rankings and faster page loading.</li>
+                    <li>Built With HTML5 CSS3 - SCSS JavaScript - React.js</li>
+                    <li>
+                      Easy to understand and customizable code (Readable code).
+                    </li>
+                    <li>
+                      Neatly written, well-organized, valid and well-commented
+                      code
+                    </li>
+                    <li>
+                      Best coding practices to achieve higher search engine
+                      rankings and faster page loading.
+                    </li>
                   </ul>
                 </div>
               </div>
               <div className="ac_title">
-                <div className="tit">
+                <div id="acc3" onClick={handleClick} className="tit">
                   <h4 className="title">Smooth Animations</h4>
                   <div className="open">
-                    <i className="fa-solid fa-chevron-down" />
+                    <i
+                      className={`fa-solid fa-chevron-down ${activeAccordion ===
+                      "acc3"
+                        ? "active"
+                        : ""}`}
+                    />
                   </div>
                 </div>
-                <div className="acc_content">
+                <div
+                  className={`acc_content cc3 ${activeAccordion === "acc3"
+                    ? "active"
+                    : ""}`}
+                >
                   <p>
                     The template includes cool effects and various options for
                     smooth and unique animations built on pure CSS3 or famous

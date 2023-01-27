@@ -30,7 +30,7 @@ const Home = () => {
           <img loading="lazy" src={Star} alt="star" />
         </div>
         <h2>
-          <i>Hi, I am </i><span ref={el} />
+          <i>Hi, I am $ </i><span ref={el} />
         </h2>
         <p className="h_p">
           Creative Front End Developer skilled at creating a unique customer

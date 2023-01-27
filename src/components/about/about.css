@@ -325,14 +325,26 @@
 .about .container .features .accordion .inner .ac_title .tit .open i {
   color: #fff;
 }
+.about .container .features .accordion .inner .ac_title .tit .open i.active {
+  transform: rotate(180deg);
+  transition: .5s ease-in-out;
+}
 .acc_content {
   padding: 0 120px 0px 10px;
   height: 0;
   overflow: hidden;
-  transition: all .5s ease-in-out;
+  transition: height 1s cubic-bezier(.25,.1,.25,1);
 }
-.acc_content.active {
-  height: 100%;
+.cc1.active {
+  height: 230px;
+  padding-bottom: 35px;
+}
+.cc2.active {
+  height: 155px;
+  padding-bottom: 35px;
+}
+.cc3.active {
+  height: 362px;
   padding-bottom: 35px;
 }
 .acc_content p {

@@ -37,15 +37,13 @@
 .home .h_entire h2 {
   color: #f9f9f9;
   line-height: 2.5;
-  font-size: 44px;
+  font-size: 40px;
   width: 100%;
   padding-left: 200px;
 }
 .home .h_entire h2 span {
   color: #d00120;
-}
-.home .h_entire h2 i {
-  font-style: normal;
+  font-style: italic;
 }
 .home .h_entire .social {
   display: flex;
