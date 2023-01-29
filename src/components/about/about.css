@@ -164,13 +164,12 @@
   }
 }
 .about .container .row .img img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 .about .container .row .review {
   width: 50%;
-  padding-left: 40px;
+  padding-left: 60px;
 }
 .about .container .row .review h4 {
   color: #fff;
@@ -296,7 +295,6 @@
 }
 .about .container .features .accordion .inner {
   width: 100%;
-  border-top: 1px solid #181b1d;
 }
 .about .container .features .accordion .inner .ac_title {
   cursor: pointer;
@@ -307,6 +305,9 @@
   border-top: 1px solid #181b1d;
   justify-content: space-between;
   padding: 35px 10px;
+}
+.about .container .features .accordion .inner .ac_title:last-child {
+  border-bottom: 1px solid #181b1d;
 }
 .about .container .features .accordion .inner .ac_title .tit h4 {
   color: #fff;
@@ -333,7 +334,7 @@
   padding: 0 120px 0px 10px;
   height: 0;
   overflow: hidden;
-  transition: height 1s cubic-bezier(.25,.1,.25,1);
+  transition: height 1s cubic-bezier(.25, .1, .25, 1);
 }
 .cc1.active {
   height: 230px;
@@ -344,7 +345,7 @@
   padding-bottom: 35px;
 }
 .cc3.active {
-  height: 362px;
+  height: 390px;
   padding-bottom: 35px;
 }
 .acc_content p {
@@ -368,4 +369,73 @@
   border-radius: 50%;
   top: 8px;
   left: 0;
+}
+.testimonilas {
+  position: relative;
+}
+.testimonilas .hidden_r {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;
+  color: #f9f9f9;
+  opacity: .03;
+  letter-spacing: 10px;
+  pointer-events: none;
+}
+.swiper_container {
+  width: 100%;
+  padding: 0 30% 50px 30%;
+
+}
+.swiper_container .client {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px;
+  background: rgba(225, 225, 225, 0.04);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  border-radius: 10px;
+}
+.swiper_container .client h4 {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.swiper_container .client h6 {
+  color: #656877;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+.swiper_container .client h6 a {
+  color: #656877;
+}
+.swiper_container .client .stars {
+  display: flex;
+  gap: 5px;
+}
+.swiper_container .client .stars p {
+  margin-left: 5px;
+  color: #656877;
+}
+.swiper_container .client .stars ion-icon {
+  color: #ffd233;
+  font-size: 14px;
+}
+.swiper_container .client .review {
+  margin-top: 10px;
+}
+.swiper_container .client .review p {
+  font-style: italic;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: .5px;
 }

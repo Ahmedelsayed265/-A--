@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./about.css";
+import SwiperSlides from "./swiper";
 import abo from "./../assest/about.jpg";
 import cv from "./../assest/Ahmed_elsayed.pdf";
 const About = () => {
@@ -167,6 +168,16 @@ const About = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <section className="testimonilas">
+          <h2 className="hidden_r">REVIEWS</h2>
+          <h3>CLIENT REVIEWS</h3>
+          <div className="line">
+            <span />
+          </div>
+          <div className="swiper_container">
+            <SwiperSlides />
           </div>
         </section>
       </div>
