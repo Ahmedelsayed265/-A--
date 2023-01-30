@@ -3,6 +3,80 @@ import "./about.css";
 import SwiperSlides from "./swiper";
 import abo from "./../assest/about.jpg";
 import cv from "./../assest/Ahmed_elsayed.pdf";
+const skills = [
+  {
+    id: 1,
+    src: "assets/html.png",
+    link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
+    span: "HTML5"
+  },
+  {
+    id: 2,
+    src: "assets/css.png",
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    span: "CSS3"
+  },
+  {
+    id: 3,
+    src: "assets/boot.png",
+    link: "https://getbootstrap.com/docs/5.1/getting-started/introduction/",
+    span: "Bootstrap5"
+  },
+  {
+    id: 4,
+    src: "assets/sass.png",
+    link: "https://sass-lang.com/",
+    span: "Sass"
+  },
+  {
+    id: 5,
+    src: "assets/js.png",
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    span: "Javascript"
+  },
+  {
+    id: 6,
+    src: "assets/react.png",
+    link: "https://reactjs.org/docs/getting-started.html",
+    span: "React.js"
+  },
+  {
+    id: 7,
+    src: "assets/redux.png",
+    link: "https://redux-toolkit.js.org/",
+    span: "Redux"
+  },
+  {
+    id: 8,
+    src: "assets/next.png",
+    link: "https://nextjs.org/",
+    span: "Next.js"
+  },
+  {
+    id: 9,
+    src: "assets/git.png",
+    link: "https://git-scm.com/",
+    span: "Git & GitHub"
+  },
+  {
+    id: 10,
+    src: "assets/fire.png",
+    link: "https://firebase.google.com/",
+    span: "Firebase"
+  },
+  {
+    id: 11,
+    src: "assets/photo.png",
+    link: "https://www.adobe.com/mena_ar/products/photoshop.html",
+    span: "Photoshop"
+  },
+  {
+    id: 12,
+    src: "assets/figma.png",
+    link: "https://www.figma.com/",
+    span: "figma"
+  }
+];
 const About = () => {
   const [activeAccordion, setActiveAccordion] = useState("acc1");
   const handleClick = e => {
@@ -178,6 +252,27 @@ const About = () => {
           </div>
           <div className="swiper_container">
             <SwiperSlides />
+          </div>
+        </section>
+        <section className="skills">
+          <h2 className="hidden_s">SKILLS</h2>
+          <h3>MY SKILLS</h3>
+          <div className="line">
+            <span />
+          </div>
+          <div className="skills_grid">
+            {skills.map(card => {
+              return (
+                <div key={card.id} className="card">
+                  <a href={card.link} target="_blank" rel="noopener noreferrer">
+                    <img loading="lazy" src={card.src} alt="html" />
+                  </a>
+                  <span>
+                    {card.span}
+                  </span>
+                </div>
+              );
+            })}
           </div>
         </section>
       </div>
