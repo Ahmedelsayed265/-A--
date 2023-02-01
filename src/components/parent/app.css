@@ -9,7 +9,8 @@
   font-family: 'Radio Canada', sans-serif;
 }
 body {
-  background-color: #111517;
+  /* background-color: #111517; */
+  background-image: url("../assest/gif1.gif");
   overflow-x: hidden;
 }
 a {

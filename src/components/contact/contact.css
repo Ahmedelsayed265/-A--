@@ -60,6 +60,13 @@
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.contact .row .links p {
+  color: #656877;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1px;
   margin-bottom: 30px;
 }
 .contact .row .links .field {
@@ -73,23 +80,35 @@
   display: flex;
   justify-content: center;
   padding: 15px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.contact .row .links .field:hover .round {
+  border-color: #d00120;
+  box-shadow: 0px 0px 2px rgb(208, 1, 32), 0px 0px 4px rgb(208, 1, 32),
+    0px 0px 6px rgb(208, 1, 32);
+}
+.contact .row .links .field:hover .round i {
+  color: #d00120;
 }
 .contact .row .links .field .round {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 1px solid #d00120;
+  border: 1px solid #656877;
   display: flex;
   align-items: center;
+  transition: all .4s ease-in-out;
   justify-content: center;
 }
 .contact .row .links .field .round i {
-  color: #d00120;
+  transition: all .4s ease-in-out;
+  color: #656877;
   font-size: 20px;
 }
 .contact .row .links .field .description {
   width: calc(100% - 60px);
-  padding-left: 20px;
+  padding-left: 25px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -99,7 +118,7 @@
   font-weight: 400;
   font-size: 16px;
 }
-.contact .row .links .field .description a{
+.contact .row .links .field .description a {
   color: #656877;
   font-weight: 400;
   font-size: 16px;

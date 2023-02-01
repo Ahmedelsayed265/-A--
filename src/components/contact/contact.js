@@ -4,13 +4,14 @@ const Contact = () => {
   return (
     <section className="contact">
       <h2 className="hidden">CONTACT</h2>
-      <h3>Contact me</h3>
+      <h3>Get in touch</h3>
       <div className="line">
-        <span />
+      <span />
       </div>
       <div className="row">
-        <div className="links">
-          <h4>Contact information</h4>
+      <div className="links">
+      <h4>Contact information</h4>
+      <p>Got a question or proposal, or just want to say hello? Go ahead.</p>
           <div className="field">
             <div className="round">
               <i className="fa-solid fa-envelope" />
@@ -20,6 +21,22 @@ const Contact = () => {
               <a href="mailto:ae290084@gmail.com">ae290084@gmail.com</a>
               <a href="mailto:ahmedelsayed2102@icloud.com">
                 ahmedelsayed2102@icloud.com
+              </a>
+            </div>
+          </div>
+          <div className="field">
+            <div className="round">
+              <i className="fa-solid fa-phone" />
+            </div>
+            <div className="description">
+              <h5>Phone & Whatsapp Number</h5>
+              <a href="tel:+201027964469">+201027964469</a>
+              <a
+                href="https://wa.me/201027964469"
+                target="_blank"
+                rel="noreferrer"
+              >
+                01027964469
               </a>
             </div>
           </div>
