@@ -455,7 +455,7 @@
 .skills_grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   padding: 20px 100px 60px 100px;
   gap: 30px;
 }

@@ -63,18 +63,6 @@ const skills = [
     src: "assets/fire.png",
     link: "https://firebase.google.com/",
     span: "Firebase"
-  },
-  {
-    id: 11,
-    src: "assets/photo.png",
-    link: "https://www.adobe.com/mena_ar/products/photoshop.html",
-    span: "Photoshop"
-  },
-  {
-    id: 12,
-    src: "assets/figma.png",
-    link: "https://www.figma.com/",
-    span: "figma"
   }
 ];
 const About = () => {
