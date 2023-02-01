@@ -15,8 +15,8 @@ const Home = () => {
       ],
       startDelay: 300,
       typeSpeed: 100,
-      backSpeed: 100,
-      backDelay: 100,
+      backSpeed: 30,
+      backDelay: 500,
       loop: true
     });
     return () => {

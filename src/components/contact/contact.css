@@ -1,0 +1,241 @@
+.contact {
+  width: 100%;
+  position: relative;
+}
+.contact .hidden {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;
+  color: #f9f9f9;
+  opacity: .03;
+  letter-spacing: 10px;
+  pointer-events: none;
+}
+.contact h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 5px;
+  padding-top: 90px;
+  text-transform: uppercase;
+}
+.contact .line {
+  width: 100%;
+  height: 15px;
+  margin-bottom: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .line span {
+  width: 160px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: rgba(208, 1, 32, .2);
+  position: relative;
+}
+.contact .line span::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  background-color: #d00120;
+  animation: toright 2s linear infinite;
+}
+.contact .row {
+  width: 100%;
+  display: flex;
+  padding: 0 80px 40px 80px;
+}
+.contact .row .links {
+  width: 50%;
+  padding-right: 80px;
+}
+.contact .row .links h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.contact .row .links .field {
+  width: 100%;
+  height: 120px;
+  background: rgba(225, 225, 225, 0.04);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.contact .row .links .field .round {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #d00120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .row .links .field .round i {
+  color: #d00120;
+  font-size: 20px;
+}
+.contact .row .links .field .description {
+  width: calc(100% - 60px);
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contact .row .links .field .description h5 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+}
+.contact .row .links .field .description a{
+  color: #656877;
+  font-weight: 400;
+  font-size: 16px;
+}
+.contact .row .form {
+  width: 50%;
+  padding: 30px;
+  background: rgba(225, 225, 225, 0.04);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  border-radius: 10px;
+}
+.contact .row .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contact .row .form form .input_filed {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contact .row .form form .input_filed label {
+  font-size: 14px;
+  color: rgb(250, 250, 250);
+  font-weight: 300;
+}
+.contact .row .form form .input_filed input {
+  height: 45px;
+  background: none;
+  outline: none;
+  border: 1px solid #292c2f;
+  padding-left: 10px;
+  border-radius: .25rem;
+  color: #656877;
+  font-size: 14px;
+  transition: all .4s ease-in-out;
+}
+.contact .row .form form .input_filed input:focus {
+  border-color: #d00120;
+  box-shadow: 0px 0px 2px rgb(208, 1, 32), 0px 0px 4px rgb(208, 1, 32),
+    0px 0px 6px rgb(208, 1, 32);
+}
+.contact .row .form form .input_filed textarea:focus {
+  border-color: #d00120;
+  box-shadow: 0px 0px 2px rgb(208, 1, 32), 0px 0px 4px rgb(208, 1, 32),
+    0px 0px 6px rgb(208, 1, 32);
+}
+.contact .row .form form .input_filed textarea {
+  background: none;
+  outline: none;
+  border: 1px solid #292c2f;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-radius: .25rem;
+  color: #656877;
+  font-size: 14px;
+  transition: all .4s ease-in-out;
+}
+.contact .row .form form .btn {
+  width: 160px;
+  height: 40px;
+  background: none;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  color: #656877;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all .3s cubic-bezier(1, 0, 0, 1);
+}
+.contact .row .form form .btn:hover {
+  color: #fff;
+}
+.contact .row .form form .btn .t,
+.l,
+.bb,
+.bl {
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #656877;
+  border-left: 1px solid #656877;
+  border-bottom: transparent;
+  border-right: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .3s cubic-bezier(1, 0, 0, 1);
+}
+.contact .row .form form .btn .l {
+  border-top: transparent;
+  border-left: 1px solid #656877;
+  border-bottom: 1px solid #656877;
+  border-right: transparent;
+  bottom: 0;
+  top: initial;
+}
+.contact .row .form form .btn .bl {
+  border-top: transparent;
+  border-left: transparent;
+  border-bottom: 1px solid #656877;
+  border-right: 1px solid #656877;
+  bottom: 0;
+  top: initial;
+  left: initial;
+  right: 0;
+}
+.contact .row .form form .btn .bb {
+  border-top: 1px solid #656877;
+  border-left: transparent;
+  border-bottom: transparent;
+  border-right: 1px solid #656877;
+  left: initial;
+  right: 0;
+}
+.contact .row .form form .btn:hover .t {
+  width: 76px;
+  height: 17px;
+  border-color: #fff;
+}
+.contact .row .form form .btn:hover .l {
+  border-color: #fff;
+  width: 76px;
+  height: 17px;
+}
+.contact .row .form form .btn:hover .bb {
+  border-color: #fff;
+  width: 76px;
+  height: 17px;
+}
+.contact .row .form form .btn:hover .bl {
+  border-color: #fff;
+  width: 76px;
+  height: 17px;
+}

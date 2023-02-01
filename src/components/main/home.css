@@ -20,7 +20,7 @@
   border-radius: 50%;
   border: 5px solid #d00120;
   box-shadow: 0px 0px 2px rgb(208, 1, 32), 0px 0px 4px rgb(208, 1, 32),
-  0px 0px 6px rgb(208, 1, 32);
+    0px 0px 6px rgb(208, 1, 32);
   margin-bottom: 25px;
 }
 .home .h_entire .img img {
@@ -43,9 +43,11 @@
   width: 100%;
   padding-left: 200px;
 }
+.home .h_entire h2 i {
+  font-style: normal;
+}
 .home .h_entire h2 span {
   color: #d00120;
-  font-style: italic;
 }
 .home .h_entire .social {
   display: flex;

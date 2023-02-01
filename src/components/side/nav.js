@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./nav.css";
 const Nav = () => {
-  const [activeLink, setActiveLink] = useState("Link1");
+  const [activeLink, setActiveLink] = useState();
   let location = useLocation();
   useEffect(() => {
       setActiveLink(location.pathname);
@@ -51,7 +51,7 @@ const Nav = () => {
         <div className="tw">
           <p>
             <span>© 2023</span>
-            <a href="https://www.linkedin.com/in/ahmed-elsayed-0ba86020b/">
+            <a href="https://www.upwork.com/freelancers/~01d6dbd6e6166f0252">
               AhmedElsayed
             </a>
           </p>
