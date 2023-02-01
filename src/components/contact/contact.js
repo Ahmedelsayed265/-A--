@@ -1,17 +1,21 @@
 import React from "react";
 import "./contact.css";
+import upwork from "../assest/upwork.png";
+import freelancer from "../assest/freelancer-icon.svg";
 const Contact = () => {
   return (
     <section className="contact">
       <h2 className="hidden">CONTACT</h2>
       <h3>Get in touch</h3>
       <div className="line">
-      <span />
+        <span />
       </div>
       <div className="row">
-      <div className="links">
-      <h4>Contact information</h4>
-      <p>Got a question or proposal, or just want to say hello? Go ahead.</p>
+        <div className="links">
+          <h4>Contact information</h4>
+          <p>
+            Got a question or proposal, or just want to say hello? Go ahead.
+          </p>
           <div className="field">
             <div className="round">
               <i className="fa-solid fa-envelope" />
@@ -39,6 +43,24 @@ const Contact = () => {
                 01027964469
               </a>
             </div>
+          </div>
+          <div className="hires">
+            <a
+              href="https://www.upwork.com/freelancers/~01d6dbd6e6166f0252"
+              target="_blank"
+              rel="noreferrer"
+              className="upwork"
+            >
+              <img src={upwork} alt="upwork" />
+            </a>
+            <a
+              href="https://www.freelancer.com/u/Ahmedelsayed2101"
+              target="_blank"
+              rel="noreferrer"
+              className="upwork"
+            >
+              <img src={freelancer} alt="freelancer" />
+            </a>
           </div>
         </div>
         <div className="form">
