@@ -1,0 +1,48 @@
+.works {
+  width: 100%;
+  position: relative;
+}
+.works .hidden {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;
+  color: #f9f9f9;
+  opacity: .05;
+  letter-spacing: 10px;
+  pointer-events: none;
+}
+.works h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 5px;
+  padding-top: 90px;
+  text-transform: uppercase;
+}
+.works .line {
+  width: 100%;
+  height: 15px;
+  margin-bottom: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.works .line span {
+  width: 160px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: rgba(208, 1, 32, .2);
+  position: relative;
+}
+.works .line span::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  background-color: #d00120;
+  animation: toright 2s linear infinite;
+}

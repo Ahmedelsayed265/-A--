@@ -64,11 +64,16 @@ const Contact = () => {
           </div>
         </div>
         <div className="form">
-          <form action="">
+          <form
+            action="https://formsubmit.co/ahmedelsayed2102@icloud.com"
+            method="Post"
+          >
+            <input type="hidden" name="_subject" value="New Message!!" />
             <div className="input_filed">
               <label htmlFor="name">Name</label>
               <input
                 id="name"
+                name="Name"
                 type="text"
                 required
                 placeholder="Enter your name.."
@@ -78,6 +83,7 @@ const Contact = () => {
               <label htmlFor="email">Email</label>
               <input
                 id="email"
+                name="Email"
                 type="email"
                 required
                 placeholder="Enter your email.."
@@ -85,14 +91,19 @@ const Contact = () => {
             </div>
             <div className="input_filed">
               <label htmlFor="subject">Subject</label>
-              <input id="subject" type="text" placeholder="Enter subject.." />
+              <input
+                id="subject"
+                name="Subject"
+                type="text"
+                placeholder="Enter subject.."
+              />
             </div>
             <div className="input_filed">
               <label htmlFor="message">Message</label>
               <textarea
                 required
                 id="message"
-                name="message"
+                name="Message"
                 placeholder="Enter your message.."
                 rows="6"
               />

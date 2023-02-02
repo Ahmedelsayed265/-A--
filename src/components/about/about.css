@@ -456,8 +456,8 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding: 20px 100px 60px 100px;
-  gap: 30px;
+  padding: 20px 120px 60px 120px;
+  gap: 35px;
 }
 .skills_grid .card {
   width: 100%;
